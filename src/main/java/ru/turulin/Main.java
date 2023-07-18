@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        Map<String, List<Integer>> duplicates = getDuplicates(new String[]{"qwe", "wqe", "qwee", "a", "a"});
+        Map<String, List<Integer>> duplicates = getDuplicates(args);
         duplicates.forEach((k, v) -> System.out.println(k + ":  " + v));
     }
 
